@@ -1,0 +1,104 @@
+/* 
+  font-family: "Montserrat", sans-serif;
+  font-family: "Fraunces", serif;
+
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  font-family: "Montserrat", sans-serif;
+  color: hsl(228, 12%, 48%);
+}
+
+.container {
+  width: 45%;
+  height: 460px;
+  background-color: hsl(0, 0%, 100%);
+  margin: 150px auto;
+  border-radius: 20px;
+}
+
+.container img {
+  width: 50%;
+  height: 100%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.text-container {
+  width: 50%;
+  float: right;
+}
+
+.container .text-container h6,
+.container .text-container h2,
+.container .text-container p {
+  margin-left: 35px;
+  margin-top: 25px;
+}
+
+.container .text-container h6 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.container .text-container h2 {
+  font-family: "Fraunces", serif;
+  color: hsl(212, 21%, 14%);
+  font-size: 35px;
+  line-height: 1.1;
+}
+
+.container .text-container .desc {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.container .text-container .price {
+  color: hsl(158, 36%, 37%);
+  font-family: "Fraunces", serif;
+  font-size: 35px;
+  font-weight: 800;
+  position: relative;
+}
+
+.container .text-container .price::after {
+  content: "$169.99";
+  text-decoration: line-through;
+  color: hsl(228, 12%, 48%);
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  position: absolute;
+  position: absolute;
+  left: 55%;
+  top: 35%;
+}
+
+.container .text-container button {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(158, 36%, 37%);
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 50px;
+  width: 80%;
+  height: 50px;
+  font-weight: 600;
+  margin: 25px 0 0 35px;
+  transition: all 0.3s ease-in;
+}
+
+.container .text-container button:hover {
+  background-color: hsl(158, 42%, 18%);
+  cursor: pointer;
+}
